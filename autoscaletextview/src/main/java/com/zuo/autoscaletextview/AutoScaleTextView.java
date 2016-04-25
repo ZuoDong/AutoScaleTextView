@@ -1,11 +1,14 @@
 package com.zuo.autoscaletextview;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Paint;
+import android.os.Bundle;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.util.TypedValue;
+import android.view.View;
 import android.widget.TextView;
 
 public class AutoScaleTextView extends TextView
@@ -111,5 +114,4 @@ public class AutoScaleTextView extends TextView
 		if (width != oldwidth)
 			this.refitText(this.getText().toString(), width);
 	}
-
 }

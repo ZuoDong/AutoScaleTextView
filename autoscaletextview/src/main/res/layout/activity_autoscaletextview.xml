@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zuo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<Button
+    android:id="@+id/autoscaletextview_btn_biger" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="加字数"/>  
+<Button 
+    android:id="@+id/autoscaletextview_btn_smaller" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="减字数"/> 
+<TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#000"
+    android:text="动态设置textview"/> 
+<com.zuo.autoscaletextview.AutoScaleTextView
+    android:id="@+id/autoscaletextview_textview"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:layout_width="200dp"
+    android:layout_height="60dp"
+    android:singleLine="true"
+    android:textSize="20sp"
+    android:textColor="#000"
+    zuo:minTextSize="10sp"
+    android:background="@drawable/autoscaletextview_bg"
+    android:text="我是textview"/>
+<TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#000"
+    android:text="静态设置textview"/> 
+<com.zuo.autoscaletextview.AutoScaleTextView
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:layout_width="200dp"
+    android:layout_height="60dp"
+    android:singleLine="true"
+    android:textSize="20sp"
+    android:textColor="#000"
+    zuo:minTextSize="10sp"
+    android:background="@drawable/autoscaletextview_bg"
+    android:text="我是textview我是textview我是textview"/>
+</LinearLayout>
